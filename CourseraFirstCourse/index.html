@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>Coursera First Course</title>
+</head>
+<body>
+<style>
+	body {
+		background: #111111;
+	}
+	.topnav {
+	  background-color: #333;
+	  overflow: hidden;
+	}
+
+
+	.topnav a {
+	  float: right;
+	  margin-right: 60px;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 20px; 
+	}
+
+
+	.topnav a:hover {
+	
+	  color: white;
+	}
+
+	.topnav a.active {
+	  color: white;
+	}
+
+	.topnav a.active:hover {
+		background: green;
+	}
+
+	.main-section-h1 {
+		position: absolute;
+		  top: 30%;
+		  left: 10%;
+		  color: white;
+		  font-size: 70px;
+		  letter-spacing: 3px;
+	}
+
+	.main-section-p {
+		position: absolute;
+		  top: 45%;
+		  left: 10%;
+		  color: white;
+		  font-size: 30px;
+		  letter-spacing: 2px;
+	}
+
+	.main-section-button1 {
+		position: absolute;
+		  top: 65%;
+		  left: 10%;
+		  color: white;
+		  font-size: 28px;
+		  background: #00796b;
+		  border: #00796b;
+		  width: 5em;
+		  border-radius: 30px;
+		  border: none;
+	}
+
+	.main-section-button2 {
+		position: absolute;
+		  top: 65%;
+		  left: 19%;
+		  color: white;
+		  font-size: 28px;
+		  background: #00796b;
+		  border: #00796b;
+		  width: 6em;
+		  border-radius: 30px;
+		  border: none;
+	}
+
+	#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+/* About Section */
+
+.about-section-h1 {
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	margin-top: 30px;
+	letter-spacing: 2px;
+}
+.about-section-p {
+	margin-top: -20px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.about-section-button1 {
+	margin-left: 31em;
+	color: white;
+	font-size: 28px;
+	background: #00796b;
+	border: #00796b;
+	width: 6em;
+	border-radius: 30px;
+	border: none;
+	margin-top: 15px;
+}
+
+</style>
+	 <div class="topnav">
+  <a class="active" href="#home">Contact Us</a>
+  <a class="active"href="#contact">Our Pizza's</a>
+  <a class="active"href="#news">Order Now</a>
+  <a class="active"href="#contact">About</a>
+  <a class="active"href="#about">Home</a>
+</div>
+
+
+<section class="main-section">
+
+	<h1 class="main-section-h1">Our Food</h1>
+
+	<p class="main-section-p">Lorem Ipsum is simply dummy text<br>of the 
+
+		printing and typesetting industry.<br> Lorem Ipsum has been the 
+	industry's</p>
+	<button  onclick="on()"class="main-section-button1"> Overlay</button>
+
+	<button class="main-section-button2">Order Now</button>
+		
+			<video src="video/pizza video 2.mp4" width="100%" autoplay loop>
+
+			</video>
+
+			<div id="overlay" onclick="off()">
+			  <div id="text">Overlay Mode</div>
+			</div>
+
+			
+			
+</section>
+
+
+<section id="about-section">
+	<h1 class="about-section-h1">About</h1>
+	<p class="about-section-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+		 Ullam voluptates nihil voluptatem dolor suscipit odio!</p>
+		 <button class="about-section-button1">View Deals</button>
+</section>
+
+
+
+
+<!-- order-now -->
+<section id="order-now-section">
+	<div class="container">
+
+	</div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Javascript -->
+<script>
+	function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+</body>
+
+
+</html>
